@@ -2,9 +2,19 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard1.3</TargetFramework>
-    <Version>0.1.0</Version> 
+    <Version>0.1.1</Version> 
     <Authors>Khanlar Mammadov</Authors> 
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild> 
+    <Description>Extension for Microsoft dependency injection container that helps to configure and add TacitusLogger as a singleton.
+Attention: TacitusLogger.DI.MicrosoftDI is currently in Alpha phase. This means you should not use it in any production code.</Description> 
+    <PackageReleaseNotes>Attention: TacitusLogger.DI.MicrosoftDI is currently in Alpha phase. This means you should not use it in any production code.</PackageReleaseNotes> 
+    <PackageLicenseUrl>https://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl> 
+    <PackageProjectUrl>https://github.com/khanlarmammadov/TacitusLogger.DI.MicrosoftDI</PackageProjectUrl> 
+    <RepositoryUrl>https://github.com/khanlarmammadov/TacitusLogger.DI.MicrosoftDI</RepositoryUrl>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netstandard1.3\TacitusLogger.DI.MicrosoftDI.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
